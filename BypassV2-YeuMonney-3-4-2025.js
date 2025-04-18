@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      12.0
 // @description  Bypass Yeumoney
-// @author       cre: BaoNgocCoder & Remake: AngryCat
+// @author       cre: BaoNgocCoder & Remake: Angry Cat
 // @match        *://yeumoney.com/*
 // @match        *://docs.google.com/spreadsheets/*
 // @match        *://docs.google.com/forms/*
@@ -764,7 +764,7 @@
         if (_0x40033b) {
           let _0x509187 = parseInt(_0x472088.value);
           const _0x4045fc = setInterval(() => {
-            _0x5d24b1.value = "Đang bypass, chờ sau: " + _0x509187 + "giây Success!";
+            _0x5d24b1.value = "Đang bypass, chờ sau: " + _0x509187 + "giây";
             _0x509187--;
             if (_0x509187 < 0) {
               clearInterval(_0x4045fc);
@@ -776,7 +776,7 @@
           }, 1000);
         } else {
           _0x5d24b1.readOnly = false;
-          _0x5d24b1.value = "Error! Xem Lại URL Or Đổi Nhiệm Vụ";
+          _0x5d24b1.value = "Error! Xem Lại URL Hoặc Đổi Nhiệm Vụ";
           setTimeout(() => {
             _0x5d24b1.value = "Đang tự động đổi nhiệm vụ...";
             const _0x328284 = _0xda2a50();
@@ -926,7 +926,7 @@
     _0x33be0b.appendChild(_0x4c8255);
     const _0x5a1722 = document.createElement("div");
     _0x5a1722.className = "author-text";
-    _0x5a1722.textContent = "Cre: BaoNgoc & Remake: AngryCat";
+    _0x5a1722.textContent = "Cre: BaoNgoc & Remake: Angry Cat";
     _0x57e49a.appendChild(_0x33be0b);
     _0x57e49a.appendChild(_0x5a1722);
     document.body.appendChild(_0x57e49a);
