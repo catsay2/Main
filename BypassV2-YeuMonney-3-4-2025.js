@@ -675,7 +675,7 @@
     _0xa98d7a.className = "bypass-header";
     const _0x325185 = document.createElement("h3");
     _0x325185.className = "bypass-title";
-    _0x325185.textContent = "Bypass Yeumoney V2";
+    _0x325185.textContent = "Cat Bypass V1";
     _0xa98d7a.appendChild(_0x325185);
     const _0x5ef220 = document.createElement("button");
     _0x5ef220.className = "toggle-btn";
@@ -722,7 +722,7 @@
     _0x108fdf.className = "slider-container";
     const _0x24e616 = document.createElement("label");
     _0x24e616.className = "slider-label";
-    _0x24e616.textContent = "Thời Gian Bypass: ";
+    _0x24e616.textContent = "Thời Gian Bypass(Nên Để 75s để tránh lỗi: ";
     const _0x5b28b1 = document.createElement("span");
     _0x5b28b1.id = "delay-value";
     const _0x2d75f5 = GM_getValue("bypassDelay", 2);
@@ -750,7 +750,7 @@
       try {
         _0x5d24b1.readOnly = true;
         const _0x138d69 = _0x5d24b1.value || _0x33897c;
-        _0x5d24b1.value = "Chờ Xíu Nhe Ní...";
+        _0x5d24b1.value = "Chờ Xíu Thoi...";
         if (_0x2cdfe6 && _0xf55a8b) {
           _0x5d24b1.value = "Đang Bypass với IP: " + _0xf55a8b.ip + ":" + _0xf55a8b.port;
         }
