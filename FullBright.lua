@@ -1,14 +1,17 @@
--- Tạo một script LocalScript trong StarterPlayerScripts hoặc StarterGui
+-- LocalScript (đặt trong StarterPlayerScripts hoặc StarterGui)
 
 local Lighting = game:GetService("Lighting")
+local RunService = game:GetService("RunService")
 
--- Hàm để thiết lập độ sáng
+-- Thiết lập độ sáng tối đa và thời gian cố định
 local function setFullBright()
-    Lighting.Brightness = 3 -- Tăng độ sáng
-    Lighting.OutdoorAmbient = Color3.new(1, 1, 1) -- Màu sáng cho môi trường ngoài
-    Lighting.Ambient = Color3.new(1, 1, 1) -- Màu sáng cho môi trường trong
-    Lighting.TimeOfDay = "14:00:00" -- Thay đổi thời gian để có ánh sáng ban ngày
+    Lighting.Brightness = 4
+    Lighting.OutdoorAmbient = Color3.new(1, 1, 1)
+    Lighting.Ambient = Color3.new(1, 1, 1)
+    Lighting.TimeOfDay = "14:00:00"
+    Lighting.ClockTime = 14
+    Lighting.GlobalShadows = false
 end
 
--- Gọi hàm khi game bắt đầu
-setFullBright()
+-- Đảm bảo ánh sáng luôn được giữ nguyên mỗi frame
+RunService.RenderStepped:Connect(setFullBright)
