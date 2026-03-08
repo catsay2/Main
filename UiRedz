@@ -331,6 +331,14 @@ function MakeWindow(Configs)
     Active = true,
     Draggable = true
   })Corner(Menu)
+
+local Gradient = Instance.new("UIGradient")
+Gradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(255,80,150)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(120,60,255))
+}
+Gradient.Rotation = 45
+Gradient.Parent = Menu
   
   local TopBar = Create("Frame", Menu, {
     BackgroundTransparency = 1,
